@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day, My Love</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="mainSlide">
+        <h1><b>EVEN MILES APART, MY HEART SENDS YOU A ROSE! 🌹</b></h1>
+        <img class="image" src="rose.webp">
+        <p class="message">Distance may keep us apart, but my love for you blossoms more with every passing moment. This rose is a promise that my heart is always with you. 🌹💖</p>
+        <div class="button-container">
+            <button id="yesButton"> ACCEPT WITH LOVE 💕</button>
+            <button id="no"> I MISS YOU TOO 😢</button>
+        </div>
+    </div>
+    
+    <div id="secondSlide" style="display: none; text-align: center;">
+        <h1><b>EVERY MOMENT WITHOUT YOU FEELS EMPTY... 💕</b></h1>
+        <p class="message">But looking at these beautiful moments we've shared reminds me that love knows no distance. Until we meet again, here are some special memories for you. ❤️</p>
+        <div class="photo-gallery">
+            <img class="gallery-image" src="1.JPEG">
+            <img class="gallery-image" src="2.JPEG">
+            <img class="gallery-image" src="3.JPEG">
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("yesButton").addEventListener("click", showAlert);
+    function showAlert() {
+        alert("HAPPY FIRST ROSE DAY, MY LOVE! 🌹 Even though we are far apart, my heart beats only for you. Counting down the days until I can hold you in my arms again! 💖✨");
+    }
+    
+    var no = document.getElementById("no");
+    no.addEventListener("click", showSecondSlide);
+    function showSecondSlide() {
+        document.getElementById("mainSlide").style.display = "none";
+        document.getElementById("secondSlide").style.display = "block";
+    }
+</script>
+</html>
